@@ -14,14 +14,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kentaro-m/qr-code-commenter-action.git"
+    "url": "git+https://github.com/michaelwestergaardOoono/qr-code-commenter-action.git"
   },
   "keywords": [
     "actions",
     "node",
     "setup"
   ],
-  "author": "kentaro-m",
+  "author": "michaelwestergaardOoono",
   "license": "MIT",
   "dependencies": {
     "@actions/core": "^1.2.0",
