@@ -5,9 +5,9 @@ import * as QRCode from 'qrcode'
 async function run(): Promise<void> {
   try {
     const content = core.getInput('content', {required: true})
-    const result = await QRCode.toString(content)
+    const result = await QRCode.toDataURL(content)
     const comment = core.getInput('comment', {required: true})
-    const body = comment.replace('{qrcode}', result)
+    const body = comment.replace('{qrcode}', `![QRCode]($result)`)
 
     const token = core.getInput('repo-token', {required: true})
     const githubAPI = new github.GitHub(token)
